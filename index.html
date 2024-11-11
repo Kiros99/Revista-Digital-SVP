@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Revista Digital U.E.T.H.S.V.P</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="LOGOSVP.png" alt="Logo de la Unidad Educativa" class="logo">
+            <h1 align="rigth">San Vicente De Paúl</h1>
+            <nav>
+                <a href="#somos-proya">Quienes Somos?</a>
+                <a href="#nuestros-programas">Información</a>
+                <a href="#caracteristicas">Videos</a>
+                <a href="#final">Nuestra Revista</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <br><br><br><br><br><br><br><br>
+        <h1>Unidad Educativa Tecnico Humanistico<br>San Vicente de Paúl</h1>
+    </section>
+
+    <section id="somos-proya">
+        <div class="container">
+            <div class="img-container"></div>
+            <div class="texto">
+                <h2>Somos <span class="color-acento">Vicentinos</span></h2>
+                <p>Una comunidad inspirada en los valores y el legado de San Vicente de Paúl, cuya vida y obra nos impulsan a vivir con solidaridad, respeto y compromiso. Nacido el 24 de abril de 1581 en Pouy, al suroeste de Francia, San Vicente dedicó su vida al servicio de los más necesitados, y en su honor, celebramos su fiesta cada 27 de septiembre, una fecha especial que también marca el aniversario de nuestra institución. Con 38 años de historia, seguimos construyendo un ambiente de aprendizaje y crecimiento personal, donde cada vicentino encuentra un espacio para desarrollarse plenamente y contribuir a nuestra comunidad.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="nuestros-programas">
+        <div class="container">
+            <h2>Datos de nuestra comunidad</h2>
+            <div class="programas">
+                <div class="carta">
+                    <h3>Estudiantes</h3><br><br><br>
+                    <p>En el turno de la tarde, en la sección secundaria, contamos con una comunidad de entre 500 y 600 estudiantes. Cada uno de ellos aporta al ambiente de aprendizaje del colegio, creando un espacio donde todos pueden crecer, compartir ideas y trabajar juntos. La diversidad de estudiantes hace que nuestra escuela sea un lugar único y especial para aprender y desarrollarse.</p>
+                    
+                </div>
+                <div class="carta">
+                    <h3>Materias BTH</h3><br><br><br>
+                    <p>Contamos con tres materias humanísticas que forman parte de nuestra oferta educativa: Sistemas Informáticos, Diseño y Gastronomía. Estas materias permiten a los estudiantes desarrollar habilidades en áreas clave como la tecnología, la creatividad y la cultura culinaria, brindándoles herramientas prácticas y conocimientos que enriquecen su formación integral y los preparan para el futuro.</p>
+                    
+                </div>
+                <div class="carta">
+                    <h3>Ubicación</h3><br><br><br><br><br>
+                    <a href="https://maps.app.goo.gl/GeY7GZzRJvFCtPW27 " target="_blank">
+                        <button>Ver en Google Maps</button>
+                        <br><br><br>
+                    </a>
+                    <a href="https://www.facebook.com/UESVDP?mibextid=ZbWKwL " target="_blank">
+                        <button>Visítanos en Facebook</button>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="caracteristicas">
+        <div class="container">
+            <div class="grid-container">
+                <div class="image-container">
+                    <img src="pasado.jpg" alt="Descripción de la imagen">
+                </div>
+                <div class="video-container">
+                    <video controls>
+                        <source src="ee.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="final">
+        <h2>Esta es nuestra revista!</h2>
+        <a href="Revista Digital de la U.E.T.H. San Vicente de Paul.pdf" download="Revista Digital de la U.E.T.H. San Vicente de Paul.pdf" id="Revista Digital de la U.E.T.H. San Vicente de Paul.pdf">
+            <button>Descargar</button>
+        </a>
+        
+    </section>
+
+    <footer>
+        <div class="container">
+            
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuncios con Cierre</title>
+    <style>
+        /* Estilo general para los anuncios */
+        .ad-container {
+            position: fixed;
+            z-index: 9999;
+            border-radius: 8px;
+            overflow: hidden;
+            opacity: 0; /* Inicialmente oculto */
+            transform: translateY(-50px); /* Empezamos fuera de la pantalla */
+            animation: fadeIn 1s forwards; /* Animación para aparecer */
+        }
+
+        /* Primer anuncio (más pequeño) */
+        #ad1 {
+            width: 270px;  /* Ajustado a 270px de ancho */
+            height: 375px; /* Ajustado a 375px de alto */
+            top: 10px;
+            right: 10px;
+            animation-delay: 0.5s; /* Aparece después del segundo */
+        }
+
+        /* Segundo anuncio (más grande) */
+        #ad2 {
+            width: 500px;
+            height: 205px;
+            top: 320px;
+            right: 10px;
+            animation-delay: 1s; /* Aparece después de 1 segundo */
+        }
+
+        /* Estilo para el botón de cerrar */
+        .close-btn {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            font-size: 20px;
+            background-color: transparent;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .close-btn:hover {
+            color: red;
+        }
+
+        /* Estilo para el iframe que contiene la imagen */
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Animación para el efecto de aparición */
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Primer anuncio -->
+    <div id="ad1" class="ad-container">
+        <iframe src="download (4).jpeg" frameborder="0"></iframe>
+        <button class="close-btn" onclick="closeAd('ad1')">X</button>
+    </div>
+
+    <!-- Segundo anuncio -->
+    <div id="ad2" class="ad-container">
+        <iframe src="redes-twitter.jpg" frameborder="0"></iframe>
+        <button class="close-btn" onclick="closeAd('ad2')">X</button>
+    </div>
+
+    <script>
+        // Función para cerrar el anuncio
+        function closeAd(adId) {
+            document.getElementById(adId).style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
